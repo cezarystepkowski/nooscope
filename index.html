@@ -71,6 +71,178 @@
 
             <section>
                 <h2>5. Algorytm uczący: kompresowanie świata do modelu statystycznego</h2>
+                <p>Algorytmy SI często przywoływane są jako alchemiczne formuły zdolne do destylowania „pozaludzkich” form inteligencji. Co jednak tak naprawdę robią algorytmy uczenia maszynowego? Niewiele osób, także wśród zwolenników ogólnej sztucznej inteligencji<!-- @todo Przypis: AGI - Artificial General Intelligence (może nawet w nawiasie, jak przy Perceiving and Recognizing Automaton) -->, zadaje sobie to pytanie. Algorytm to nazwa procesu, w którym maszyna wykonuje obliczenia. Rezultatem takich maszynowych procesów jest model statystyczny (a dokładniej coś, co nosi nazwę „algorytmicznego modelu statystycznego”). W środowisku programistów termin „algorytm” jest coraz częściej zastępowany pojęciem „model”. Owo terminologiczne pomieszanie wynika z faktu, że statystyczny model nie istnieje niezależnie od algorytmu: w jakiś sposób model statystyczny istnieje w algorytmie jako pamięć rozproszona w postaci jego parametrów. Z tego samego powodu w zasadzie nie da się zwizualizować algorytmicznego modelu statystycznego, tak jak robi się to z prostymi funkcjami matematycznymi. Mimo to warto podjąć wyzwanie.</p>
+                <p>W uczeniu maszynowym mamy do czynienia z różnymi <strong>architekturami algorytmów</strong>: prosty perceptron, głęboka sieć neuronowa, maszyna wektorów nośnych, sieć bayesowska, łańcuch Markowa, autoencoder, maszyna Boltzmanna itp. Każda z tych architektur posiada inną historię (często zakorzenioną w agencjach wojskowych i korporacjach globalnej Północy). Sztuczne sieci neuronowe były na początku prostymi strukturami obliczeniowymi, które ewoluowały do skomplikowanych struktur, kontrolowanych przez miliony <strong>parametrów</strong> wyrażanych przy pomocy kilku <strong>hiperparametrów</strong><a href="#nooscope-ref-28-bottom" id="nooscope-ref-28-top"><sup>28</sup></a>. Dla przykładu, konwolucyjne sieci neuronowe są opisywane przez ograniczony zestaw hiperparametrów (liczby warstw, ilości neuronów na każdej warstwie, rodzaju połączenia, zachowania neuronów itp.), które rzutują kompleksową topologię tysięcy sztucznych neuronów wraz z milionami parametrów. Algorytm zaczyna jako czysta karta i – w trakcie procesu nazywanego trenowaniem albo „uczeniem się z danych” – dostosowuje swoje parametry, póki nie uzyska dobrej reprezentacji danych wejściowych. W rozpoznawaniu obrazów, jak wykazano, proces obliczeniowy milionów parametrów dąży do rozwiązania w prostej binarnej danej wyjściowej: 1=prawda, przedstawiony obraz został rozpoznany, albo 0=fałsz, przedstawiony obraz nie został rozpoznany<a href="#nooscope-ref-29-bottom" id="nooscope-ref-29-top"><sup>29</sup></a>.</p>
+                <figure>
+                    <img src="img/Nooscope_04 Architecture.svg" alt="Źródło: https://www.asimovinstitute.org/neural-network-zoo">
+                    <figcaption>Źródło: <a href="https://www.asimovinstitute.org/neural-network-zoo" target="_blank">www.asimovinstitute.org/neural-network-zoo</a></figcaption>
+                </figure>
+                <p>Żeby w przystępny sposób wyjaśnić związek pomiędzy algorytmem a modelem, spójrzmy na kompleksowy algorytm Inception v3, oparty na głębokiej konwolucyjnej sieci neuronowej służącej do rozpoznawania obrazów, zaprojektowany przez Google i trenowany na zbiorze danych pochodzących z ImageNetu. Mówi się, że Inception v3 posiada dokładność na poziomie 78% w identyfikowaniu poprawnych opisów dla obrazów, jednak w tym wypadku wydajność „maszynowej inteligencji” może być również mierzona stosunkiem rozmiaru danych treningowych do rozmiaru algorytmu trenującego (lub modelu). ImageNet zawiera 14 milionów obrazów z przypisanymi opisami, które zajmują mniej więcej 150 GB pamięci. Tymczasem, Inception v3, którego zadaniem jest reprezentacja informacji zawartych w ImageNet, waży jedynie 92 MB. Stosunek kompresji pomiędzy zbiorem treningowym i modelem częściowo opisuje również poziom dyfrakcji informacji. Tabela z dokumentacji biblioteki Keras zestawia ze sobą te wartości (liczbę parametrów, głębokość warstwy, wymiar pliku i dokładność) dla głównych modeli rozpoznawania obrazów<a href="#nooscope-ref-30-bottom" id="nooscope-ref-30-top"><sup>30</sup></a>. Jest to brutalny, ale efektywny sposób na pokazanie relacji między modelem a danymi po to, by zademonstrować, w jaki sposób „inteligencja” algorytmów jest mierzona i szacowana w społeczności programistów.</p>
+                <section>
+                    <h5>Dokumentacja poszczególnych modeli</h5>
+                    <figure>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="first">Model</th>
+                                <th>Rozmiar</th>
+                                <th>Dokładność top-1</th><!-- @todo jakoś inaczej tłumaczymy "Top-x accuracy"? -->
+                                <th>Dokładność top-5</th><!-- @todo jakoś inaczej tłumaczymy "Top-x accuracy"? -->
+                                <th>Parametery</th>
+                                <th>Ilość warstw</th><!-- @todo liczba warstw? -->
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Xception</td>
+                                <td>88 MB</td>
+                                <td>0.790</td>
+                                <td>0.945</td>
+                                <td>22,910,480</td>
+                                <td>126</td>
+                            </tr>
+                            <tr>
+                                <td>VGG16</td>
+                                <td>528 MB</td>
+                                <td>0.713</td>
+                                <td>0.901</td>
+                                <td>138,357,544</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <td>VGG19</td>
+                                <td>549 MB</td>
+                                <td>0.713</td>
+                                <td>0.900</td>
+                                <td>143,667,240</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>ResNet50</td>
+                                <td>98 MB</td>
+                                <td>0.749</td>
+                                <td>0.921</td>
+                                <td>25,636,712</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>ResNet101</td>
+                                <td>171 MB</td>
+                                <td>0.764</td>
+                                <td>0.928</td>
+                                <td>44,707,176</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>ResNet152</td>
+                                <td>232 MB</td>
+                                <td>0.766</td>
+                                <td>0.931</td>
+                                <td>60,419,944</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>ResNet50V2</td>
+                                <td>98 MB</td>
+                                <td>0.760</td>
+                                <td>0.930</td>
+                                <td>25,613,800</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>ResNet101V2</td>
+                                <td>171 MB</td>
+                                <td>0.772</td>
+                                <td>0.938</td>
+                                <td>44,675,560</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>ResNet152V2</td>
+                                <td>232 MB</td>
+                                <td>0.780</td>
+                                <td>0.942</td>
+                                <td>60,380,648</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>InceptionV3</td>
+                                <td>92 MB</td>
+                                <td>0.779</td>
+                                <td>0.937</td>
+                                <td>23,851,784</td>
+                                <td>159</td>
+                            </tr>
+                            <tr>
+                                <td>InceptionResNetV2</td>
+                                <td>215 MB</td>
+                                <td>0.803</td>
+                                <td>0.953</td>
+                                <td>55,873,736</td>
+                                <td>572</td>
+                            </tr>
+                            <tr>
+                                <td>MobileNet</td>
+                                <td>16 MB</td>
+                                <td>0.704</td>
+                                <td>0.895</td>
+                                <td>4,253,864</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>MobileNetV2</td>
+                                <td>14 MB</td>
+                                <td>0.713</td>
+                                <td>0.901</td>
+                                <td>3,538,984</td>
+                                <td>88</td>
+                            </tr>
+                            <tr>
+                                <td>DenseNet121</td>
+                                <td>33 MB</td>
+                                <td>0.750</td>
+                                <td>0.923</td>
+                                <td>8,062,504</td>
+                                <td>121</td>
+                            </tr>
+                            <tr>
+                                <td>DenseNet169</td>
+                                <td>57 MB</td>
+                                <td>0.762</td>
+                                <td>0.932</td>
+                                <td>14,307,880</td>
+                                <td>169</td>
+                            </tr>
+                            <tr>
+                                <td>DenseNet201</td>
+                                <td>80 MB</td>
+                                <td>0.773</td>
+                                <td>0.936</td>
+                                <td>20,242,984</td>
+                                <td>201</td>
+                            </tr>
+                            <tr>
+                                <td>NASNetMobile</td>
+                                <td>23 MB</td>
+                                <td>0.744</td>
+                                <td>0.919</td>
+                                <td>5,326,716</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>NASNetLarge</td>
+                                <td>343 MB</td>
+                                <td>0.825</td>
+                                <td>0.960</td>
+                                <td>88,949,818</td>
+                                <td>-</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <figcaption>Źródło: <a href="https://keras.io/applications" target="_blank">keras.io/applications</a></figcaption>
+                    </figure>
+                </section>
+                <p>Modele statystyczne od zawsze wpływały na kulturę i politykę. Nie pojawiły się dopiero wraz z uczeniem maszynowym – uczenie maszynowe jest jedynie nowym sposobem automatyzacji technik modelowania statystycznego. Kiedy Greta Thunberg ostrzega: „Słuchajcie nauki”, to jako uczennica dobra z matematyki ma na myśli: „Słuchajcie statystycznych modeli nauk o klimacie”. Bez statystycznych modeli nie ma nauk o klimacie; bez nauk o klimacie nie ma aktywizmu klimatycznego. Nauki o klimacie są dobrym przykładem, od którego warto zacząć, żeby zrozumieć modele statystyczne. Globalne ocieplenie wyliczono przez zebranie najpierw ogromnej ilości danych na temat temperatur na Ziemi z każdego dnia roku, a następnie zastosowano matematyczny model, który wyznacza krzywą zmienności temperatury z przeszłości, aby powstały w ten sposób wzorzec rzutować na przyszłość<a href="#nooscope-ref-31-bottom" id="nooscope-ref-31-top"><sup>31</sup></a>. Modele klimatyczne są artefaktami o naturze historycznej, testowanymi i omawianymi w <strong>społeczności naukowej</strong>, a dzisiaj również poza nią<a href="#nooscope-ref-32-bottom" id="nooscope-ref-32-top"><sup>32</sup></a>. Modele maszynowe zaś pozostają niejawne i niedostępne dla szerszej publiczności. Biorąc pod uwagę to, jak wokół konstruktów matematycznych sztucznej inteligencji tworzą się mity i uprzedzenia społeczne, rzeczywiście zapoczątkowała ona erę <em>statystycznej fantastyki naukowej</em>. Nooskop jest projektorem w tym ogromnym statystycznym kinie.</p>
             </section>
 
             <section>

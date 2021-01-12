@@ -16,7 +16,8 @@
         </style>
     </head>
     <body>
-        <article>
+
+                        <article>
             <header>
                 <h1>Nooskop ujawniony – manifest.</h1>
                 <h3>Sztuczna inteligencja jako narzędzie ekstraktywizmu wiedzy</h3>
@@ -80,7 +81,8 @@
                 <p>W uczeniu maszynowym mamy do czynienia z różnymi <strong>architekturami algorytmów</strong>: prosty perceptron, głęboka sieć neuronowa, maszyna wektorów nośnych, sieć bayesowska, łańcuch Markowa, autoencoder, maszyna Boltzmanna itp. Każda z tych architektur posiada inną historię (często zakorzenioną w agencjach wojskowych i korporacjach globalnej Północy). Sztuczne sieci neuronowe były na początku prostymi strukturami obliczeniowymi, które ewoluowały do skomplikowanych struktur, kontrolowanych przez miliony <strong>parametrów</strong> wyrażanych przy pomocy kilku <strong>hiperparametrów</strong><a href="#nooscope-ref-28-bottom" id="nooscope-ref-28-top"><sup>28</sup></a>. Dla przykładu, konwolucyjne sieci neuronowe są opisywane przez ograniczony zestaw hiperparametrów (liczby warstw, ilości neuronów na każdej warstwie, rodzaju połączenia, zachowania neuronów itp.), które rzutują kompleksową topologię tysięcy sztucznych neuronów wraz z milionami parametrów. Algorytm zaczyna jako czysta karta i – w trakcie procesu nazywanego trenowaniem albo „uczeniem się z danych” – dostosowuje swoje parametry, póki nie uzyska dobrej reprezentacji danych wejściowych. W rozpoznawaniu obrazów, jak wykazano, proces obliczeniowy milionów parametrów dąży do rozwiązania w prostej binarnej danej wyjściowej: 1=prawda, przedstawiony obraz został rozpoznany, albo 0=fałsz, przedstawiony obraz nie został rozpoznany<a href="#nooscope-ref-29-bottom" id="nooscope-ref-29-top"><sup>29</sup></a>.</p>
                 <figure>
                     <img src="img/Nooscope_04 Architecture.svg" alt="Źródło: https://www.asimovinstitute.org/neural-network-zoo">
-                    <figcaption>Źródło: <a href="https://www.asimovinstitute.org/neural-network-zoo" target="_blank">www.asimovinstitute.org/neural-network-zoo</a></figcaption>
+                    <figcaption>Źródło:
+                        <a href="https://www.asimovinstitute.org/neural-network-zoo" target="_blank">www.asimovinstitute.org/neural-network-zoo</a></figcaption>
                 </figure>
                 <p>Żeby w przystępny sposób wyjaśnić związek pomiędzy algorytmem a modelem, spójrzmy na kompleksowy algorytm Inception v3, oparty na głębokiej konwolucyjnej sieci neuronowej służącej do rozpoznawania obrazów, zaprojektowany przez Google i trenowany na zbiorze danych pochodzących z ImageNetu. Mówi się, że Inception v3 posiada dokładność na poziomie 78% w identyfikowaniu poprawnych opisów dla obrazów, jednak w tym wypadku wydajność „maszynowej inteligencji” może być również mierzona stosunkiem rozmiaru danych treningowych do rozmiaru algorytmu trenującego (lub modelu). ImageNet zawiera 14 milionów obrazów z przypisanymi opisami, które zajmują mniej więcej 150 GB pamięci. Tymczasem, Inception v3, którego zadaniem jest reprezentacja informacji zawartych w ImageNet, waży jedynie 92 MB. Stosunek kompresji pomiędzy zbiorem treningowym i modelem częściowo opisuje również poziom dyfrakcji informacji. Tabela z dokumentacji biblioteki Keras zestawia ze sobą te wartości (liczbę parametrów, głębokość warstwy, wymiar pliku i dokładność) dla głównych modeli rozpoznawania obrazów<a href="#nooscope-ref-30-bottom" id="nooscope-ref-30-top"><sup>30</sup></a>. Jest to brutalny, ale efektywny sposób na pokazanie relacji między modelem a danymi po to, by zademonstrować, w jaki sposób „inteligencja” algorytmów jest mierzona i szacowana w społeczności programistów.</p>
                 <section>
@@ -244,7 +246,8 @@
                             </tr>
                             </tbody>
                         </table>
-                        <figcaption>Źródło: <a href="https://keras.io/applications" target="_blank">keras.io/applications</a></figcaption>
+                        <figcaption>Źródło:
+                        <a href="https://keras.io/applications" target="_blank">keras.io/applications</a></figcaption>
                     </figure>
                 </section>
                 <p>Modele statystyczne od zawsze wpływały na kulturę i politykę. Nie pojawiły się dopiero wraz z uczeniem maszynowym – uczenie maszynowe jest jedynie nowym sposobem automatyzacji technik modelowania statystycznego. Kiedy Greta Thunberg ostrzega: „Słuchajcie nauki”, to jako uczennica dobra z matematyki ma na myśli: „Słuchajcie statystycznych modeli nauk o klimacie”. Bez statystycznych modeli nie ma nauk o klimacie; bez nauk o klimacie nie ma aktywizmu klimatycznego. Nauki o klimacie są dobrym przykładem, od którego warto zacząć, żeby zrozumieć modele statystyczne. Globalne ocieplenie wyliczono przez zebranie najpierw ogromnej ilości danych na temat temperatur na Ziemi z każdego dnia roku, a następnie zastosowano matematyczny model, który wyznacza krzywą zmienności temperatury z przeszłości, aby powstały w ten sposób wzorzec rzutować na przyszłość<a href="#nooscope-ref-31-bottom" id="nooscope-ref-31-top"><sup>31</sup></a>. Modele klimatyczne są artefaktami o naturze historycznej, testowanymi i omawianymi w <strong>społeczności naukowej</strong>, a dzisiaj również poza nią<a href="#nooscope-ref-32-bottom" id="nooscope-ref-32-top"><sup>32</sup></a>. Modele maszynowe zaś pozostają niejawne i niedostępne dla szerszej publiczności. Biorąc pod uwagę to, jak wokół konstruktów matematycznych sztucznej inteligencji tworzą się mity i uprzedzenia społeczne, rzeczywiście zapoczątkowała ona erę <em>statystycznej fantastyki naukowej</em>. Nooskop jest projektorem w tym ogromnym statystycznym kinie.</p>
@@ -341,7 +344,7 @@
                             <label id="nooscope-ref-01-bottom">
                                 <a href="#nooscope-ref-01-top">1</a>
                             </label>
-                            <p> On the autonomy of technology see: Langdon Winner, <cite>Autonomous Technology: Technics-Out-of-Control as a Theme in Political Thought</cite>. Cambridge, MA: MIT Press, 2001.</p>
+                            <p>On the autonomy of technology see: Langdon Winner, <cite>Autonomous Technology: Technics-Out-of-Control as a Theme in Political Thought</cite>. Cambridge, MA: MIT Press, 2001.</p>
                         </div>
                     </li>
 
@@ -350,12 +353,8 @@
                             <label id="nooscope-ref-02-bottom">
                                 <a href="#nooscope-ref-02-top">2</a>
                             </label>
-                            <p> For the
-                                extension of colonial power into the operations of logistics, algorithms
-                                and finance see: Sandro Mezzadra and Brett Neilson, <cite>The Politics of Operations: Excavating Contemporary Capitalism</cite>.
-                                Durham: Duke University Press, 2019. On the epistemic colonialism of AI
-                                see: Matteo Pasquinelli, ‘Three Thousand Years of Algorithmic Rituals.’
-                                <cite>e-flux</cite> 101, 2019.</p>
+                            <p>For the extension of colonial power into the operations of logistics, algorithms and finance see: Sandro Mezzadra and Brett Neilson, <cite>The Politics of Operations: Excavating Contemporary Capitalism</cite>. Durham: Duke University Press, 2019. On the epistemic colonialism of AI see: Matteo
+                               Pasquinelli, ‘Three Thousand Years of Algorithmic Rituals.’ <cite>e-flux</cite> 101, 2019.</p>
                         </div>
                     </li>
 
@@ -364,7 +363,7 @@
                             <label id="nooscope-ref-03-bottom">
                                 <a href="#nooscope-ref-03-top">3</a>
                             </label>
-                            <p> Digital humanities term a similar technique <cite>distant reading</cite>, which has gradually involved data analytics and machine learning in literary and art history. See: Franco Moretti, <cite>Distant Reading</cite>. London: Verso, 2013.</p>
+                            <p>Digital humanities term a similar technique <cite>distant reading</cite>, which has gradually involved data analytics and machine learning in literary and art history. See: Franco Moretti, <cite>Distant Reading</cite>. London: Verso, 2013.</p>
                         </div>
                     </li>
 
@@ -373,7 +372,7 @@
                             <label id="nooscope-ref-04-bottom">
                                 <a href="#nooscope-ref-04-top">4</a>
                             </label>
-                            <p> Gottfried W. Leibniz, ‘Preface to the General Science’, 1677. In: Phillip Wiener (ed.) <cite>Leibniz Selections</cite>. New York: Scribner, 1951, 23.</p>
+                            <p>Gottfried W. Leibniz, ‘Preface to the General Science’, 1677. In: Phillip Wiener (ed.) <cite>Leibniz Selections</cite>. New York: Scribner, 1951, 23.</p>
                         </div>
                     </li>
 
@@ -382,10 +381,7 @@
                             <label id="nooscope-ref-05-bottom">
                                 <a href="#nooscope-ref-05-top">5</a>
                             </label>
-                            <p> For a
-                                concise history of AI see: Dominique Cardon, Jean-Philippe Cointet and
-                                Antoine Mazières, ‘Neurons Spike Back: The Invention of Inductive
-                                Machines and the Artificial Intelligence Controversy.’ <cite>Réseaux</cite> 211, 2018.</p>
+                            <p>For a concise history of AI see: Dominique Cardon, Jean-Philippe Cointet and Antoine Mazières, ‘Neurons Spike Back: The Invention of Inductive Machines and the Artificial Intelligence Controversy.’ <cite>Réseaux</cite> 211, 2018.</p>
                         </div>
                     </li>
 
@@ -394,7 +390,7 @@
                             <label id="nooscope-ref-06-bottom">
                                 <a href="#nooscope-ref-06-top">6</a>
                             </label>
-                            <p> Alexander Campolo and Kate Crawford, ‘Enchanted Determinism: Power without Control in Artificial Intelligence.’ <cite>Engaging Science, Technology, and Society</cite> 6, 2020.</p>
+                            <p>Alexander Campolo and Kate Crawford, ‘Enchanted Determinism: Power without Control in Artificial Intelligence.’ <cite>Engaging Science, Technology, and Society</cite> 6, 2020.</p>
                         </div>
                     </li>
 
@@ -403,12 +399,8 @@
                             <label id="nooscope-ref-07-bottom">
                                 <a href="#nooscope-ref-07-top">7</a>
                             </label>
-                            <p> The use of
-                                the visual analogy is also intended to record the fading distinction
-                                between image and logic, representation and inference, in the technical
-                                composition of AI. The statistical models of machine learning are
-                                operative representations (in the sense of Harun Farocki’s operative
-                                images).</p>
+                            <p>The use of the visual analogy is also intended to record the fading distinction between image and logic, representation and inference, in the technical composition of AI. The statistical models of machine learning are operative representations (in the sense of Harun Farocki’s operative
+                               images).</p>
                         </div>
                     </li>
 
@@ -417,10 +409,7 @@
                             <label id="nooscope-ref-08-bottom">
                                 <a href="#nooscope-ref-08-top">8</a>
                             </label>
-                            <p> For a
-                                systematic study of the logical limitations of machine learning see:
-                                Momin Mailk, ‘A Hierarchy of Limitations in Machine Learning.’ Arxiv
-                                preprint, 2020. https://arxiv.org/abs/2002.05193</p>
+                            <p>For a systematic study of the logical limitations of machine learning see: Momin Mailk, ‘A Hierarchy of Limitations in Machine Learning.’ Arxiv preprint, 2020. https://arxiv.org/abs/2002.05193</p>
                         </div>
                     </li>
 
@@ -429,14 +418,8 @@
                             <label id="nooscope-ref-09-bottom">
                                 <a href="#nooscope-ref-09-top">9</a>
                             </label>
-                            <p> For a more
-                                detailed list of AI biases see: John Guttag and Harini Suresh, ‘A
-                                Framework for Understanding Unintended Consequences of Machine
-                                Learning.’ Arxiv preprint, 2019. https://arxiv.org/abs/1901.10002 See
-                                also: Aram Galstyan, Kristin Lerman, Ninareh Mehrabi, Fred Morstatter
-                                and Nripsuta Saxena, ‘A Survey on Bias and Fairness in Machine
-                                Learning.’ Arxiv preprint, 2019.
-                                https://arxiv.org/abs/1908.09635 </p>
+                            <p>For a more detailed list of AI biases see: John Guttag and Harini Suresh, ‘A Framework for Understanding Unintended Consequences of Machine Learning.’ Arxiv preprint, 2019. https://arxiv.org/abs/1901.10002 See also: Aram Galstyan, Kristin Lerman, Ninareh Mehrabi, Fred Morstatter and Nripsuta
+                               Saxena, ‘A Survey on Bias and Fairness in Machine Learning.’ Arxiv preprint, 2019. https://arxiv.org/abs/1908.09635 </p>
                         </div>
                     </li>
 
@@ -445,10 +428,7 @@
                             <label id="nooscope-ref-10-bottom">
                                 <a href="#nooscope-ref-10-top">10</a>
                             </label>
-                            <p> Virginia Eubanks, <cite>Automating Inequality</cite>.
-                                New York: St. Martin’s Press, 2018. See also: Kate Crawford, ‘The
-                                Trouble with Bias.’ Keynote lecture, Conference on Neural Information
-                                Processing Systems, 2017.</p>
+                            <p>Virginia Eubanks, <cite>Automating Inequality</cite>. New York: St. Martin’s Press, 2018. See also: Kate Crawford, ‘The Trouble with Bias.’ Keynote lecture, Conference on Neural Information Processing Systems, 2017.</p>
                         </div>
                     </li>
 
@@ -457,7 +437,7 @@
                             <label id="nooscope-ref-11-bottom">
                                 <a href="#nooscope-ref-11-top">11</a>
                             </label>
-                            <p> Ruha Benjamin, <cite>Race After Technology: Abolitionist Tools for the New Jim Code</cite>. Cambridge, UK: Polity, 2019, 5.</p>
+                            <p>Ruha Benjamin, <cite>Race After Technology: Abolitionist Tools for the New Jim Code</cite>. Cambridge, UK: Polity, 2019, 5.</p>
                         </div>
                     </li>
 
@@ -466,7 +446,7 @@
                             <label id="nooscope-ref-12-bottom">
                                 <a href="#nooscope-ref-12-top">12</a>
                             </label>
-                            <p> Computer scientists argue that AI belongs to a subfield of <cite>signal processing</cite>, that is <cite>data compression.</cite></p>
+                            <p>Computer scientists argue that AI belongs to a subfield of <cite>signal processing</cite>, that is <cite>data compression.</cite></p>
                         </div>
                     </li>
 
@@ -475,7 +455,7 @@
                             <label id="nooscope-ref-13-bottom">
                                 <a href="#nooscope-ref-13-top">13</a>
                             </label>
-                            <p> Matteo Pasquinelli, <cite>The Eye of the Master</cite>. London: Verso, forthcoming.</p>
+                            <p>Matteo Pasquinelli, <cite>The Eye of the Master</cite>. London: Verso, forthcoming.</p>
                         </div>
                     </li>
 
@@ -484,14 +464,8 @@
                             <label id="nooscope-ref-14-bottom">
                                 <a href="#nooscope-ref-14-top">14</a>
                             </label>
-                            <p> Projects
-                                such as Explainable Artificial Intelligence, Interpretable Deep Learning
-                                and Heatmapping among others have demonstrated that breaking into the
-                                ‘black box’ of machine learning is possible. Nevertheless, the full
-                                interpretability and explicability of machine learning statistical
-                                models remains a myth. See: Zacharay Lipton, ‘The Mythos of Model
-                                Interpretability.’ ArXiv preprint, 2016.
-                                https://arxiv.org/abs/1606.03490</p>
+                            <p>Projects such as Explainable Artificial Intelligence, Interpretable Deep Learning and Heatmapping among others have demonstrated that breaking into the ‘black box’ of machine learning is possible. Nevertheless, the full interpretability and explicability of machine learning statistical models
+                               remains a myth. See: Zacharay Lipton, ‘The Mythos of Model Interpretability.’ ArXiv preprint, 2016. https://arxiv.org/abs/1606.03490</p>
                         </div>
                     </li>
 
@@ -500,12 +474,8 @@
                             <label id="nooscope-ref-15-bottom">
                                 <a href="#nooscope-ref-15-top">15</a>
                             </label>
-                            <p> A.
-                                Corsani, B. Paulré, C. Vercellone, J.M. Monnier, M. Lazzarato, P.
-                                Dieuaide and Y. Moulier-Boutang, ‘Le Capitalisme cognitif comme sortie
-                                de la crise du capitalisme industriel. Un programme de recherché’,
-                                Paris: Laboratoire Isys Matisse, Maison des Sciences Economiques,
-                                2004. See also: Zuboff, Shoshana, <cite>The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power</cite>. London: Profile Books, 2019.</p>
+                            <p>A. Corsani, B. Paulré, C. Vercellone, J.M. Monnier, M. Lazzarato, P. Dieuaide and Y. Moulier-Boutang, ‘Le Capitalisme cognitif comme sortie de la crise du capitalisme industriel. Un programme de recherché’, Paris: Laboratoire Isys Matisse, Maison des Sciences Economiques, 2004. See also: Zuboff,
+                               Shoshana, <cite>The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power</cite>. London: Profile Books, 2019.</p>
                         </div>
                     </li>
 
@@ -514,7 +484,7 @@
                             <label id="nooscope-ref-16-bottom">
                                 <a href="#nooscope-ref-16-top">16</a>
                             </label>
-                            <p> Lisa Gitelman (ed.), <cite>Raw Data is an Oxymoron</cite>, Cambridge, MA: MIT Press, 2013.</p>
+                            <p>Lisa Gitelman (ed.), <cite>Raw Data is an Oxymoron</cite>, Cambridge, MA: MIT Press, 2013.</p>
                         </div>
                     </li>
 
@@ -523,7 +493,7 @@
                             <label id="nooscope-ref-17-bottom">
                                 <a href="#nooscope-ref-17-top">17</a>
                             </label>
-                            <p> In supervised learning. Also self-supervised learning maintains forms of human intervention.</p>
+                            <p>In supervised learning. Also self-supervised learning maintains forms of human intervention.</p>
                         </div>
                     </li>
 
@@ -532,7 +502,7 @@
                             <label id="nooscope-ref-18-bottom">
                                 <a href="#nooscope-ref-18-top">18</a>
                             </label>
-                            <p> On taxonomy as a form of knowledge and power see: Michel Foucault, <cite>The Order of Things</cite>. London: Routledge, 2005.</p>
+                            <p>On taxonomy as a form of knowledge and power see: Michel Foucault, <cite>The Order of Things</cite>. London: Routledge, 2005.</p>
                         </div>
                     </li>
 
@@ -541,10 +511,7 @@
                             <label id="nooscope-ref-19-bottom">
                                 <a href="#nooscope-ref-19-top">19</a>
                             </label>
-                            <p> Such as
-                                Amazon Mechanical Turk, cynically termed ‘artificial artificial
-                                intelligence’ by Jeff Bezos. See: Jason Pontin, ‘Artificial
-                                Intelligence, With Help from the Humans.’ <cite>The New York Times,</cite> 25 March 2007.</p>
+                            <p>Such as Amazon Mechanical Turk, cynically termed ‘artificial artificial intelligence’ by Jeff Bezos. See: Jason Pontin, ‘Artificial Intelligence, With Help from the Humans.’ <cite>The New York Times,</cite> 25 March 2007.</p>
                         </div>
                     </li>
 
@@ -553,11 +520,8 @@
                             <label id="nooscope-ref-20-bottom">
                                 <a href="#nooscope-ref-20-top">20</a>
                             </label>
-                            <p> Although
-                                the convolutional architecture dates back to Yann LeCunn’s work in the
-                                late 1980s, Deep Learning starts with this paper: Geoffrey Hinton, Alex
-                                Krizhevsky and Ilya Sutskever, ‘ImageNet Classification with Deep
-                                Convolutional Neural Networks.’ <cite>Communications of the ACM</cite> 60(6), 2017.</p>
+                            <p>Although the convolutional architecture dates back to Yann LeCunn’s work in the late 1980s, Deep Learning starts with this paper: Geoffrey Hinton, Alex Krizhevsky and Ilya Sutskever, ‘ImageNet Classification with Deep Convolutional Neural Networks.’ <cite>Communications of the ACM</cite> 60(6),
+                               2017.</p>
                         </div>
                     </li>
 
@@ -566,7 +530,7 @@
                             <label id="nooscope-ref-21-bottom">
                                 <a href="#nooscope-ref-21-top">21</a>
                             </label>
-                            <p> For an accessible (yet not very critical) account of the ImageNet development see: Melanie Mitchell, <cite>Artificial Intelligence: A Guide for Thinking Humans</cite>. London: Penguin, 2019.</p>
+                            <p>For an accessible (yet not very critical) account of the ImageNet development see: Melanie Mitchell, <cite>Artificial Intelligence: A Guide for Thinking Humans</cite>. London: Penguin, 2019.</p>
                         </div>
                     </li>
 
@@ -575,10 +539,7 @@
                             <label id="nooscope-ref-22-bottom">
                                 <a href="#nooscope-ref-22-top">22</a>
                             </label>
-                            <p> WordNet is
-                                ‘a lexical database of semantic relations between words’ which was
-                                initiated by George Armitage at Princeton University in 1985. It
-                                provides a strict tree-like structure of definitions.</p>
+                            <p>WordNet is ‘a lexical database of semantic relations between words’ which was initiated by George Armitage at Princeton University in 1985. It provides a strict tree-like structure of definitions.</p>
                         </div>
                     </li>
 
@@ -587,9 +548,7 @@
                             <label id="nooscope-ref-23-bottom">
                                 <a href="#nooscope-ref-23-top">23</a>
                             </label>
-                            <p> Kate
-                                Crawford and Trevor Paglen, ‘Excavating AI: The Politics of Training
-                                Sets for Machine Learning.’ 19 September 2019. https://excavating.ai</p>
+                            <p>Kate Crawford and Trevor Paglen, ‘Excavating AI: The Politics of Training Sets for Machine Learning.’ 19 September 2019. https://excavating.ai</p>
                         </div>
                     </li>
 
@@ -598,10 +557,7 @@
                             <label id="nooscope-ref-24-bottom">
                                 <a href="#nooscope-ref-24-top">24</a>
                             </label>
-                            <p> Adam
-                                Harvey and Jules LaPlace, Megapixel project, 2019.
-                                https://megapixels.cc/about/ And: Madhumita Murgia, ‘Who's Using Your
-                                Face? The Ugly Truth About Facial Recognition.’ <cite>Financial Times</cite>, 19 April 2019.</p>
+                            <p>Adam Harvey and Jules LaPlace, Megapixel project, 2019. https://megapixels.cc/about/ And: Madhumita Murgia, ‘Who's Using Your Face? The Ugly Truth About Facial Recognition.’ <cite>Financial Times</cite>, 19 April 2019.</p>
                         </div>
                     </li>
 
@@ -610,10 +566,7 @@
                             <label id="nooscope-ref-25-bottom">
                                 <a href="#nooscope-ref-25-top">25</a>
                             </label>
-                            <p> The GDPR
-                                data privacy regulation that was passed by the European Parliament in
-                                May 2018 is, however, an improvement compared to the regulation that is
-                                missing in the United States.</p>
+                            <p>The GDPR data privacy regulation that was passed by the European Parliament in May 2018 is, however, an improvement compared to the regulation that is missing in the United States.</p>
                         </div>
                     </li>
 
@@ -622,9 +575,7 @@
                             <label id="nooscope-ref-26-bottom">
                                 <a href="#nooscope-ref-26-top">26</a>
                             </label>
-                            <p> Frank
-                                Rosenblatt, ‘The Perceptron: A Perceiving and Recognizing Automaton.’
-                                Cornell Aeronautical Laboratory Report 85-460-1, 1957.</p>
+                            <p>Frank Rosenblatt, ‘The Perceptron: A Perceiving and Recognizing Automaton.’ Cornell Aeronautical Laboratory Report 85-460-1, 1957.</p>
                         </div>
                     </li>
 
@@ -633,7 +584,7 @@
                             <label id="nooscope-ref-27-bottom">
                                 <a href="#nooscope-ref-27-top">27</a>
                             </label>
-                            <p> Warren McCulloch and Walter Pitts, ‘How We Know Universals: The Perception of Auditory and Visual Forms.’ <cite>The Bulletin of Mathematical Biophysics</cite> 9(3): 1947.</p>
+                            <p>Warren McCulloch and Walter Pitts, ‘How We Know Universals: The Perception of Auditory and Visual Forms.’ <cite>The Bulletin of Mathematical Biophysics</cite> 9(3): 1947.</p>
                         </div>
                     </li>
 
@@ -642,11 +593,7 @@
                             <label id="nooscope-ref-28-bottom">
                                 <a href="#nooscope-ref-28-top">28</a>
                             </label>
-                            <p> The
-                                parameters of a model that are learnt from data are called ‘parameters’,
-                                while parameters that are not learnt from data and are fixed manually
-                                are called ‘hyperparameters’ (These determine number and properties of
-                                the parameters).</p>
+                            <p>The parameters of a model that are learnt from data are called ‘parameters’, while parameters that are not learnt from data and are fixed manually are called ‘hyperparameters’ (These determine number and properties of the parameters).</p>
                         </div>
                     </li>
 
@@ -655,7 +602,7 @@
                             <label id="nooscope-ref-29-bottom">
                                 <a href="#nooscope-ref-29-top">29</a>
                             </label>
-                            <p> This value can be also a percentage value between 1 and 0.</p>
+                            <p>This value can be also a percentage value between 1 and 0.</p>
                         </div>
                     </li>
 
@@ -664,7 +611,7 @@
                             <label id="nooscope-ref-30-bottom">
                                 <a href="#nooscope-ref-30-top">30</a>
                             </label>
-                            <p> https://keras.io/applications (Documentation for individual models).</p>
+                            <p>https://keras.io/applications (Documentation for individual models).</p>
                         </div>
                     </li>
 
@@ -673,7 +620,7 @@
                             <label id="nooscope-ref-31-bottom">
                                 <a href="#nooscope-ref-31-top">31</a>
                             </label>
-                            <p> Paul Edwards, <cite>A Vast Machine: Computer Models, Climate Data, and The Politics of Global Warming</cite>. Cambridge, MA:</p>
+                            <p>Paul Edwards, <cite>A Vast Machine: Computer Models, Climate Data, and The Politics of Global Warming</cite>. Cambridge, MA:</p>
                         </div>
                     </li>
 
@@ -682,14 +629,8 @@
                             <label id="nooscope-ref-32-bottom">
                                 <a href="#nooscope-ref-32-top">32</a>
                             </label>
-                            <p> See
-                                the the Community Earth System Model (CESM) that has been developed by
-                                the National Center for Atmospheric Research in Bolder, Colorado, since
-                                1996. The Community Earth System Model is a fully coupled numerical
-                                simulation of the Earth system consisting of atmospheric, ocean, ice,
-                                land surface, carbon cycle, and other components. CESM includes a
-                                climate model providing state-of-the-art simulations of the Earth's
-                                past, present, and future.’ http://www.cesm.ucar.edu</p>
+                            <p>See the the Community Earth System Model (CESM) that has been developed by the National Center for Atmospheric Research in Bolder, Colorado, since 1996. The Community Earth System Model is a fully coupled numerical simulation of the Earth system consisting of atmospheric, ocean, ice, land
+                               surface, carbon cycle, and other components. CESM includes a climate model providing state-of-the-art simulations of the Earth's past, present, and future.’ http://www.cesm.ucar.edu</p>
                         </div>
                     </li>
 
@@ -699,10 +640,7 @@
                             <label id="nooscope-ref-33-bottom">
                                 <a href="#nooscope-ref-33-top">33</a>
                             </label>
-                            <p> George
-                                Box, ‘Robustness in the Strategy of Scientific Model Building.’
-                                Technical Report #1954, Mathematics Research Center, University of
-                                Wisconsin-Madison, 1979.</p>
+                            <p>George Box, ‘Robustness in the Strategy of Scientific Model Building.’ Technical Report #1954, Mathematics Research Center, University of Wisconsin-Madison, 1979.</p>
                         </div>
                     </li>
 
@@ -711,10 +649,7 @@
                             <label id="nooscope-ref-34-bottom">
                                 <a href="#nooscope-ref-34-top">34</a>
                             </label>
-                            <p>
-                                Post-colonial and post-structuralist schools of anthropology and
-                                ethnology have stressed that there is never territory per se, but always
-                                an act of territorialisation.</p>
+                            <p>Post-colonial and post-structuralist schools of anthropology and ethnology have stressed that there is never territory per se, but always an act of territorialisation.</p>
                         </div>
                     </li>
 
@@ -723,9 +658,7 @@
                             <label id="nooscope-ref-35-bottom">
                                 <a href="#nooscope-ref-35-top">35</a>
                             </label>
-                            <p> Pattern
-                                recognition is one among many other economies of attention. ‘To look is
-                                to labor’, as Jonathan Beller reminds us. Jonathan Beller, <cite>The Cinematic Mode of Production: Attention Economy and the Society of the Spectacle</cite>. Lebanon, NH: University Press of New England, 2006, 2.</p>
+                            <p>Pattern recognition is one among many other economies of attention. ‘To look is to labor’, as Jonathan Beller reminds us. Jonathan Beller, <cite>The Cinematic Mode of Production: Attention Economy and the Society of the Spectacle</cite>. Lebanon, NH: University Press of New England, 2006, 2.</p>
                         </div>
                     </li>
 
@@ -734,10 +667,7 @@
                             <label id="nooscope-ref-36-bottom">
                                 <a href="#nooscope-ref-36-top">36</a>
                             </label>
-                            <p> Dan
-                                McQuillan, ‘Manifesto on Algorithmic Humanitarianism.’ Presented at the
-                                symposium Reimagining Digital Humanitarianism, Goldsmiths, University of
-                                London, February 16, 2018.</p>
+                            <p>Dan McQuillan, ‘Manifesto on Algorithmic Humanitarianism.’ Presented at the symposium Reimagining Digital Humanitarianism, Goldsmiths, University of London, February 16, 2018.</p>
                         </div>
                     </li>
 
@@ -746,7 +676,7 @@
                             <label id="nooscope-ref-37-bottom">
                                 <a href="#nooscope-ref-37-top">37</a>
                             </label>
-                            <p> As proven by the Universal Approximation Theorem.</p>
+                            <p>As proven by the Universal Approximation Theorem.</p>
                         </div>
                     </li>
 
@@ -755,10 +685,7 @@
                             <label id="nooscope-ref-38-bottom">
                                 <a href="#nooscope-ref-38-top">38</a>
                             </label>
-                            <p> Ananya
-                                Ganesh, Andrew McCallum and Emma Strubell, ‘Energy and Policy
-                                Considerations for Deep Learning in NLP.’ ArXiv preprint, 2019.
-                                https://arxiv.org/abs/1906.02243</p>
+                            <p>Ananya Ganesh, Andrew McCallum and Emma Strubell, ‘Energy and Policy Considerations for Deep Learning in NLP.’ ArXiv preprint, 2019. https://arxiv.org/abs/1906.02243</p>
                         </div>
                     </li>
 
@@ -767,7 +694,7 @@
                             <label id="nooscope-ref-39-bottom">
                                 <a href="#nooscope-ref-39-top">39</a>
                             </label>
-                            <p> Cardon et al, ‘Neurons Spike Back.’</p>
+                            <p>Cardon et al, ‘Neurons Spike Back.’</p>
                         </div>
                     </li>
 
@@ -776,7 +703,7 @@
                             <label id="nooscope-ref-40-bottom">
                                 <a href="#nooscope-ref-40-top">40</a>
                             </label>
-                            <p> William Gibson, <cite>Neuromancer</cite>. New York: Ace Books, 1984, 69.</p>
+                            <p>William Gibson, <cite>Neuromancer</cite>. New York: Ace Books, 1984, 69.</p>
                         </div>
                     </li>
 
@@ -785,7 +712,7 @@
                             <label id="nooscope-ref-41-bottom">
                                 <a href="#nooscope-ref-41-top">41</a>
                             </label>
-                            <p> Source: corpling.hypotheses.org/495</p>
+                            <p>Source: corpling.hypotheses.org/495</p>
                         </div>
                     </li>
 
@@ -794,9 +721,7 @@
                             <label id="nooscope-ref-42-bottom">
                                 <a href="#nooscope-ref-42-top">42</a>
                             </label>
-                            <p> Jamie
-                                Morgenstern, Samira Samadi, Mohit Singh, Uthaipon Tantipongpipat and
-                                Santosh Vempala, ‘The Price of Fair PCA: One Extra Dimension.’ <cite>Advances in Neural Information Processing Systems </cite>31, 2018.</p>
+                            <p>Jamie Morgenstern, Samira Samadi, Mohit Singh, Uthaipon Tantipongpipat and Santosh Vempala, ‘The Price of Fair PCA: One Extra Dimension.’ <cite>Advances in Neural Information Processing Systems </cite>31, 2018.</p>
                         </div>
                     </li>
 
@@ -805,11 +730,7 @@
                             <label id="nooscope-ref-43-bottom">
                                 <a href="#nooscope-ref-43-top">43</a>
                             </label>
-                            <p> See the
-                                idea of assisted and generative creation in: Roelof Pieters and Samim
-                                Winiger, ‘Creative AI: On the Democratisation and Escalation of
-                                Creativity’, 2016. http://www.
-                                medium.com/@creativeai/creativeai-9d4b2346faf3</p>
+                            <p>See the idea of assisted and generative creation in: Roelof Pieters and Samim Winiger, ‘Creative AI: On the Democratisation and Escalation of Creativity’, 2016. http://www. medium.com/@creativeai/creativeai-9d4b2346faf3</p>
                         </div>
                     </li>
 
@@ -818,7 +739,7 @@
                             <label id="nooscope-ref-44-bottom">
                                 <a href="#nooscope-ref-44-top">44</a>
                             </label>
-                            <p> Os Keyes, ‘The Misgendering Machines: Trans/HCI Implications of Automatic Gender Recognition.’ <cite>Proceedings of the ACM on Human-Computer Interaction</cite> 2(88), November 2018. https://doi.org/10.1145/3274357</p>
+                            <p>Os Keyes, ‘The Misgendering Machines: Trans/HCI Implications of Automatic Gender Recognition.’ <cite>Proceedings of the ACM on Human-Computer Interaction</cite> 2(88), November 2018. https://doi.org/10.1145/3274357</p>
                         </div>
                     </li>
 
@@ -827,11 +748,7 @@
                             <label id="nooscope-ref-45-bottom">
                                 <a href="#nooscope-ref-45-top">45</a>
                             </label>
-                            <p> Alexander
-                                Mordvintsev, Christophe Olah and Mike Tyka, ‘Inceptionism: Going Deeper
-                                into Neural Networks.’ Google Research blog, June 17, 2015.
-                                https://ai.googleblog.com/2015/06/
-                                inceptionism-going-deeper-into-neural.html</p>
+                            <p>Alexander Mordvintsev, Christophe Olah and Mike Tyka, ‘Inceptionism: Going Deeper into Neural Networks.’ Google Research blog, June 17, 2015. https://ai.googleblog.com/2015/06/ inceptionism-going-deeper-into-neural.html</p>
                         </div>
                     </li>
 
@@ -840,10 +757,7 @@
                             <label id="nooscope-ref-46-bottom">
                                 <a href="#nooscope-ref-46-top">46</a>
                             </label>
-                            <p> Deep fakes
-                                are synthetic media like videos in which a person's face is replaced
-                                with someone else's facial features, often for the purpose to forge fake
-                                news.</p>
+                            <p>Deep fakes are synthetic media like videos in which a person's face is replaced with someone else's facial features, often for the purpose to forge fake news.</p>
                         </div>
                     </li>
 
@@ -852,11 +766,7 @@
                             <label id="nooscope-ref-47-bottom">
                                 <a href="#nooscope-ref-47-top">47</a>
                             </label>
-                            <p> Joseph
-                                Paul Cohen, Sina Honari and Margaux Luck, ‘Distribution Matching Losses
-                                Can Hallucinate Features in Medical Image Translation.’ International
-                                Conference on Medical Image Computing and Computer-Assisted
-                                Intervention. Cham: Springer, 2018. arXiv:1805.08841</p>
+                            <p>Joseph Paul Cohen, Sina Honari and Margaux Luck, ‘Distribution Matching Losses Can Hallucinate Features in Medical Image Translation.’ International Conference on Medical Image Computing and Computer-Assisted Intervention. Cham: Springer, 2018. arXiv:1805.08841</p>
                         </div>
                     </li>
 
@@ -865,10 +775,7 @@
                             <label id="nooscope-ref-48-bottom">
                                 <a href="#nooscope-ref-48-top">48</a>
                             </label>
-                            <p> Fabian
-                                Offert, Neural Network Cultures panel, Transmediale festival and KIM HfG
-                                Karlsruhe. Berlin, 1 February 2020.
-                                http://kim.hfg-karlsruhe.de/events/neural-network-cultures</p>
+                            <p>Fabian Offert, Neural Network Cultures panel, Transmediale festival and KIM HfG Karlsruhe. Berlin, 1 February 2020. http://kim.hfg-karlsruhe.de/events/neural-network-cultures</p>
                         </div>
                     </li>
 
@@ -877,7 +784,7 @@
                             <label id="nooscope-ref-49-bottom">
                                 <a href="#nooscope-ref-49-top">49</a>
                             </label>
-                            <p> Michel Foucault, <cite>Abnormal: Lectures at the Collège de France 1974-1975</cite>. New York: Picador, 2004, 26.</p>
+                            <p>Michel Foucault, <cite>Abnormal: Lectures at the Collège de France 1974-1975</cite>. New York: Picador, 2004, 26.</p>
                         </div>
                     </li>
 
@@ -886,10 +793,7 @@
                             <label id="nooscope-ref-50-bottom">
                                 <a href="#nooscope-ref-50-top">50</a>
                             </label>
-                            <p> On
-                                computational norms see: Matteo Pasquinelli, ‘Arcana Mathematica
-                                Imperii: The Evolution of Western Computational Norms.’ In: Maria
-                                Hlavajova et al. (eds), <cite>Former West</cite>. Cambridge, MA: MIT Press, 2017.</p>
+                            <p>On computational norms see: Matteo Pasquinelli, ‘Arcana Mathematica Imperii: The Evolution of Western Computational Norms.’ In: Maria Hlavajova et al. (eds), <cite>Former West</cite>. Cambridge, MA: MIT Press, 2017.</p>
                         </div>
                     </li>
 
@@ -898,7 +802,7 @@
                             <label id="nooscope-ref-51-bottom">
                                 <a href="#nooscope-ref-51-top">51</a>
                             </label>
-                            <p> Paola Ricaurte, ‘Data Epistemologies, The Coloniality of Power, and Resistance.’ <cite>Television &amp; New Media,</cite> 7 March 2019.</p>
+                            <p>Paola Ricaurte, ‘Data Epistemologies, The Coloniality of Power, and Resistance.’ <cite>Television &amp; New Media,</cite> 7 March 2019.</p>
                         </div>
                     </li>
 
@@ -907,10 +811,7 @@
                             <label id="nooscope-ref-52-bottom">
                                 <a href="#nooscope-ref-52-top">52</a>
                             </label>
-                            <p> David
-                                Ingold, and Spencer Soper, ‘Amazon Doesn’t Consider the Race of its
-                                Customers. Should It?’, Bloomberg, 21 April 2016.
-                                https://www.bloomberg.com/graphics/2016-amazon-same-day</p>
+                            <p>David Ingold, and Spencer Soper, ‘Amazon Doesn’t Consider the Race of its Customers. Should It?’, Bloomberg, 21 April 2016. https://www.bloomberg.com/graphics/2016-amazon-same-day</p>
                         </div>
                     </li>
 
@@ -919,7 +820,7 @@
                             <label id="nooscope-ref-53-bottom">
                                 <a href="#nooscope-ref-53-top">53</a>
                             </label>
-                            <p> Cathy O’Neil, <cite>Weapons of Math Destruction</cite>. New York: Broadway Books, 2016, ch 9.</p>
+                            <p>Cathy O’Neil, <cite>Weapons of Math Destruction</cite>. New York: Broadway Books, 2016, ch 9.</p>
                         </div>
                     </li>
 
@@ -928,10 +829,8 @@
                             <label id="nooscope-ref-54-bottom">
                                 <a href="#nooscope-ref-54-top">54</a>
                             </label>
-                            <p> Chris Anderson, ‘The End of Theory: The Data Deluge Makes the Scientific Method Obsolete.’ <cite>Wired</cite>,
-                                23 June 2008. For a critique see: Fulvio Mazzocchi, ‘Could Big Data Be
-                                the End of Theory in Science? A Few Remarks on the Epistemology of
-                                Data-Driven Science.’ EMBO Reports 16(10), 2015.</p>
+                            <p>Chris Anderson, ‘The End of Theory: The Data Deluge Makes the Scientific Method Obsolete.’ <cite>Wired</cite>, 23 June 2008. For a critique see: Fulvio Mazzocchi, ‘Could Big Data Be the End of Theory in Science? A Few Remarks on the Epistemology of Data-Driven Science.’ EMBO Reports 16(10), 2015.
+                            </p>
                         </div>
                     </li>
 
@@ -940,7 +839,7 @@
                             <label id="nooscope-ref-55-bottom">
                                 <a href="#nooscope-ref-55-top">55</a>
                             </label>
-                            <p> Judea Pearl and Dana Mackenzie, <cite>The Book of Why: The New Science of Cause and Effect</cite>. New York: Basic Books, 2018.</p>
+                            <p>Judea Pearl and Dana Mackenzie, <cite>The Book of Why: The New Science of Cause and Effect</cite>. New York: Basic Books, 2018.</p>
                         </div>
                     </li>
 
@@ -949,7 +848,7 @@
                             <label id="nooscope-ref-56-bottom">
                                 <a href="#nooscope-ref-56-top">56</a>
                             </label>
-                            <p> Experiments by the New York Police Department since the late 1980s. See: Pasquinelli, ‘Arcana Mathematica Imperii.’</p>
+                            <p>Experiments by the New York Police Department since the late 1980s. See: Pasquinelli, ‘Arcana Mathematica Imperii.’</p>
                         </div>
                     </li>
 
@@ -958,7 +857,7 @@
                             <label id="nooscope-ref-57-bottom">
                                 <a href="#nooscope-ref-57-top">57</a>
                             </label>
-                            <p> Dan McQuillan, ‘People’s Councils for Ethical Machine Learning.’ <cite>Social Media and Society</cite> 4(2), 2018.</p>
+                            <p>Dan McQuillan, ‘People’s Councils for Ethical Machine Learning.’ <cite>Social Media and Society</cite> 4(2), 2018.</p>
                         </div>
                     </li>
 
@@ -967,7 +866,7 @@
                             <label id="nooscope-ref-58-bottom">
                                 <a href="#nooscope-ref-58-top">58</a>
                             </label>
-                            <p> Ricaurte, ‘Data Epistemologies.’</p>
+                            <p>Ricaurte, ‘Data Epistemologies.’</p>
                         </div>
                     </li>
 
@@ -976,7 +875,7 @@
                             <label id="nooscope-ref-59-bottom">
                                 <a href="#nooscope-ref-59-top">59</a>
                             </label>
-                            <p> Felix Guattari, <cite>Schizoanalytic Cartographies</cite>. London: Continuum, 2013, 2.</p>
+                            <p>Felix Guattari, <cite>Schizoanalytic Cartographies</cite>. London: Continuum, 2013, 2.</p>
                         </div>
                     </li>
 
@@ -985,10 +884,7 @@
                             <label id="nooscope-ref-60-bottom">
                                 <a href="#nooscope-ref-60-top">60</a>
                             </label>
-                            <p> The
-                                relationship between AI and hacking is not as antagonistic as it may
-                                appear: it often resolves in a loop of mutual learning, evaluation and
-                                reinforcement.</p>
+                            <p>The relationship between AI and hacking is not as antagonistic as it may appear: it often resolves in a loop of mutual learning, evaluation and reinforcement.</p>
                         </div>
                     </li>
 
@@ -997,7 +893,7 @@
                             <label id="nooscope-ref-61-bottom">
                                 <a href="#nooscope-ref-61-top">61</a>
                             </label>
-                            <p> Adam Harvey, HyperFace project, 2016. https://ahprojects.com/hyperface</p>
+                            <p>Adam Harvey, HyperFace project, 2016. https://ahprojects.com/hyperface</p>
                         </div>
                     </li>
 
@@ -1006,7 +902,7 @@
                             <label id="nooscope-ref-62-bottom">
                                 <a href="#nooscope-ref-62-top">62</a>
                             </label>
-                            <p> Anish Athalye et al., ‘Synthesizing Robust Adversarial Examples.’ ArXiv preprint, 2017. https://arxiv.org/abs/1707.07397</p>
+                            <p>Anish Athalye et al., ‘Synthesizing Robust Adversarial Examples.’ ArXiv preprint, 2017. https://arxiv.org/abs/1707.07397</p>
                         </div>
                     </li>
 
@@ -1015,9 +911,7 @@
                             <label id="nooscope-ref-63-bottom">
                                 <a href="#nooscope-ref-63-top">63</a>
                             </label>
-                            <p> Nir
-                                Morgulis et al., ‘Fooling a Real Car with Adversarial Traffic Signs.’
-                                ArXiv preprint, 2019. https://arxiv.org/abs/1907.00374</p>
+                            <p>Nir Morgulis et al., ‘Fooling a Real Car with Adversarial Traffic Signs.’ ArXiv preprint, 2019. https://arxiv.org/abs/1907.00374</p>
                         </div>
                     </li>
 
@@ -1026,7 +920,7 @@
                             <label id="nooscope-ref-64-bottom">
                                 <a href="#nooscope-ref-64-top">64</a>
                             </label>
-                            <p> Data poisoning can also be employed to protect privacy by entering anonymized or random information into the dataset.</p>
+                            <p>Data poisoning can also be employed to protect privacy by entering anonymized or random information into the dataset.</p>
                         </div>
                     </li>
 
@@ -1035,7 +929,7 @@
                             <label id="nooscope-ref-65-bottom">
                                 <a href="#nooscope-ref-65-top">65</a>
                             </label>
-                            <p> Ian Goodfellow et al., ‘Explaining and Harnessing Adversarial Examples.’ ArXiv preprint, 2014. https://arxiv.org/abs/1412.6572</p>
+                            <p>Ian Goodfellow et al., ‘Explaining and Harnessing Adversarial Examples.’ ArXiv preprint, 2014. https://arxiv.org/abs/1412.6572</p>
                         </div>
                     </li>
 
@@ -1044,10 +938,7 @@
                             <label id="nooscope-ref-66-bottom">
                                 <a href="#nooscope-ref-66-top">66</a>
                             </label>
-                            <p> Florian
-                                Schmidt, ‘Crowdsourced Production of AI Training Data: How Human Workers
-                                Teach Self-Driving Cars to See.’ Düsseldorf: Hans-Böckler-Stiftung,
-                                2019.</p>
+                            <p>Florian Schmidt, ‘Crowdsourced Production of AI Training Data: How Human Workers Teach Self-Driving Cars to See.’ Düsseldorf: Hans-Böckler-Stiftung, 2019.</p>
                         </div>
                     </li>
 
@@ -1056,7 +947,7 @@
                             <label id="nooscope-ref-67-bottom">
                                 <a href="#nooscope-ref-67-top">67</a>
                             </label>
-                            <p> Hamid Ekbia and Bonnie Nardi, <cite>Heteromation, and Other Stories of Computing and Capitalism</cite>. Cambridge, MA: MIT Press, 2017.</p>
+                            <p>Hamid Ekbia and Bonnie Nardi, <cite>Heteromation, and Other Stories of Computing and Capitalism</cite>. Cambridge, MA: MIT Press, 2017.</p>
                         </div>
                     </li>
 
@@ -1065,19 +956,18 @@
                             <label id="nooscope-ref-68-bottom">
                                 <a href="#nooscope-ref-68-top">68</a>
                             </label>
-                            <p> For the idea of analytical intelligence see: Lorraine Daston, ‘Calculation and the Division of Labour 1750–1950.’ <cite>Bulletin of the German Historical Institute</cite> 62, 2018.</p>
+                            <p>For the idea of analytical intelligence see: Lorraine Daston, ‘Calculation and the Division of Labour 1750–1950.’ <cite>Bulletin of the German Historical Institute</cite> 62, 2018.</p>
                         </div>
                     </li>
 
                     <li>
                         <div>
                             <label id="nooscope-ref-69-bottom">
+
                                 <a href="#nooscope-ref-69-top">69</a>
                             </label>
-                            <p> Simon
-                                Schaffer, ‘Babbage’s Intelligence: Calculating Engines and the Factory
-                                System’, Critical Inquiry 21, 1994. Lorraine Daston, ‘Enlightenment
-                                calculations’. Critical Inquiry 21, 1994. Matthew L. Jones, <cite>Reckoning with Matter: Calculating Machines, Innovation, and Thinking about Thinking from Pascal to Babbage.</cite> Chicago: University of Chicago Press, 2016. 62, 2018.</p>
+                            <p>Simon Schaffer, ‘Babbage’s Intelligence: Calculating Engines and the Factory System’, Critical Inquiry 21, 1994. Lorraine Daston, ‘Enlightenment calculations’. Critical Inquiry 21, 1994. Matthew L. Jones, <cite>Reckoning with Matter: Calculating Machines, Innovation, and Thinking about Thinking from Pascal to Babbage.</cite>
+                               Chicago: University of Chicago Press, 2016. 62, 2018.</p>
                         </div>
                     </li>
 
@@ -1086,7 +976,7 @@
                             <label id="nooscope-ref-70-bottom">
                                 <a href="#nooscope-ref-70-top">70</a>
                             </label>
-                            <p> Matteo Pasquinelli, ‘On the Origins of Marx’s General Intellect.’<cite> Radical Philosophy</cite> 2.06, 2019.</p>
+                            <p>Matteo Pasquinelli, ‘On the Origins of Marx’s General Intellect.’<cite> Radical Philosophy</cite> 2.06, 2019.</p>
                         </div>
                     </li>
 
@@ -1095,10 +985,7 @@
                             <label id="nooscope-ref-71-bottom">
                                 <a href="#nooscope-ref-71-top">71</a>
                             </label>
-                            <p> Aida
-                                Ponce, ‘Labour in the Age of AI: Why Regulation is Needed to Protect
-                                Workers.’ ETUI Research Paper - Foresight Brief 8, 2020.
-                                http://dx.doi.org/10.2139/ssrn.3541002</p>
+                            <p>Aida Ponce, ‘Labour in the Age of AI: Why Regulation is Needed to Protect Workers.’ ETUI Research Paper - Foresight Brief 8, 2020. http://dx.doi.org/10.2139/ssrn.3541002</p>
                         </div>
                     </li>
 
@@ -1107,11 +994,8 @@
                             <label id="nooscope-ref-72-bottom">
                                 <a href="#nooscope-ref-72-top">72</a>
                             </label>
-                            <p> Maxine Berg, <cite>The Machinery Question and the Making of Political Economy</cite>.
-                                Cambridge, UK: Cambridge University Press, 1980. In fact, even the
-                                Economist has recently warned about ‘the return of the machinery
-                                question’ in the age of AI. See: Tom Standage, ‘The Return of the
-                                Machinery Question.’ <cite>The Economist</cite>, 23 June 2016.</p>
+                            <p>Maxine Berg, <cite>The Machinery Question and the Making of Political Economy</cite>. Cambridge, UK: Cambridge University Press, 1980. In fact, even the Economist has recently warned about ‘the return of the machinery question’ in the age of AI. See: Tom Standage, ‘The Return of the Machinery
+                               Question.’ <cite>The Economist</cite>, 23 June 2016.</p>
                         </div>
                     </li>
                 </ul>

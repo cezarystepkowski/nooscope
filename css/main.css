@@ -267,7 +267,7 @@ a:focus, a:active {
     -o-background-size: contain;
     background-size: contain, cover;
     background-color: #fff1e5;
-    background-image: url("../img/Nooscope_00_Map.svg");
+    background-image: url("../img/Nooscope_00_Map_PL.svg");
 }
 
 @media only screen and (max-width: 1000px) {
